@@ -1,0 +1,45 @@
+# Files
+
+
+#Folders
+*.DS_Store
+
+# Prerequisites
+*.d
+
+# Object files
+*.o
+
+# Linker output
+
+# Precompiled Headers
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+
+# Executables
+*.exe
+*.out
+
+# Debug files
+
+*.su
+*.idb
+*.pdb
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf

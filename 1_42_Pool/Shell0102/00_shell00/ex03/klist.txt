@@ -1,0 +1,5 @@
+Credentials cache: API:7E3C2CC1-E979-49E8-9A2A-A3D24F5B5616
+        Principal: jduque-p@42MADRID.COM
+
+  Issued                Expires               Principal
+Apr  5 18:27:36 2021  Apr  6 04:27:36 2021  krbtgt/42MADRID.COM@42MADRID.COM
