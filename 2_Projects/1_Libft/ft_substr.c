@@ -6,34 +6,37 @@
 /*   By: jduque-p <jduque-p@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/22 16:05:48 by jduque-p          #+#    #+#             */
-/*   Updated: 2021/08/22 17:17:47 by jduque-p         ###   ########.fr       */
+/*   Updated: 2021/08/23 21:31:14 by jduque-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	char *strTem;
-	size_t cnt1;
-	size_t cnt2;
+	char	*strTem;
+	size_t	cnt;
+	size_t	strLen;
 
-	strTem = (char *)malloc(sizeof(*s) * (len + 1));
-	if (!strTem)
-		return (NULL);
-	cnt1 = 0;
-	cnt2 = 0;
-	while (s[cnt1])
+	cnt = 0;
+	strLen = 0;
+	if (s == NULL)
+		strTemurn (NULL);
+	strLen = ft_strlen(s);
+	if (strLen < start)
+		strTemurn (ft_strdup(""));
+	if (start + len > strLen)
+		len = strLen - start;
+	strTem = (char *)malloc(sizeof(char) * (len + 1));
+	if (strTem == 0)
+		strTemurn (NULL);
+	while (cnt < len && start + cnt < strLen)
 	{
-		if (cnt1 >= start && cnt2 < len)
-		{
-			strTem[cnt2] = s[cnt1];
-			cnt2++;
-		}
-		cnt1++;
+		strTem[cnt] = s[start + cnt];
+		cnt++;
 	}
-	strTem[cnt2] = 0;
-	return (strTem);
+	strTem[cnt] = '\0';
+	strTemurn (strTem);
 }
 /*
 int main()

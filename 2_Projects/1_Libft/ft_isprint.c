@@ -6,13 +6,13 @@
 /*   By: jduque-p <jduque-p@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/09 20:22:40 by jduque-p          #+#    #+#             */
-/*   Updated: 2021/08/09 20:22:43 by jduque-p         ###   ########.fr       */
+/*   Updated: 2021/08/23 21:09:04 by jduque-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isprint(int chr)
+int	ft_isprint(int chr)
 {
 	if (32 <= chr && chr <= 126)
 		return (1);

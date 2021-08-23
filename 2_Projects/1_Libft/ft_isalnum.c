@@ -6,15 +6,16 @@
 /*   By: jduque-p <jduque-p@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/09 20:20:55 by jduque-p          #+#    #+#             */
-/*   Updated: 2021/08/09 20:20:58 by jduque-p         ###   ########.fr       */
+/*   Updated: 2021/08/23 21:08:41 by jduque-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isalnum(int chr)
+int	ft_isalnum(int chr)
 {
-	if (('0' <= chr && chr <= '9') || ('a' <= chr && chr <= 'z') || ('A' <= chr && chr <= 'Z'))
+	if (('0' <= chr && chr <= '9') || ('a' <= chr && chr <= 'z')
+		|| ('A' <= chr && chr <= 'Z'))
 		return (1);
 	return (0);
 }

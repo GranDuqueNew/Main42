@@ -6,13 +6,13 @@
 /*   By: jduque-p <jduque-p@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/09 20:19:16 by jduque-p          #+#    #+#             */
-/*   Updated: 2021/08/09 20:19:47 by jduque-p         ###   ########.fr       */
+/*   Updated: 2021/08/23 21:08:49 by jduque-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isalpha(int chr)
+int	ft_isalpha(int chr)
 {
 	if (('a' <= chr && chr <= 'z') || ('A' <= chr && chr <= 'Z'))
 		return (1);

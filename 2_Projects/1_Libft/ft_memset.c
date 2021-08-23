@@ -6,16 +6,16 @@
 /*   By: jduque-p <jduque-p@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/10 17:53:25 by jduque-p          #+#    #+#             */
-/*   Updated: 2021/08/17 23:13:30 by jduque-p         ###   ########.fr       */
+/*   Updated: 2021/08/23 21:17:47 by jduque-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *ft_memset(void *str, int c, size_t len)
+void	*ft_memset(void *str, int c, size_t len)
 {
-	size_t cnt;
-	unsigned char *strTem;
+	size_t			cnt;
+	unsigned char	*strTem;
 
 	strTem = (unsigned char *)str;
 	cnt = 0;
