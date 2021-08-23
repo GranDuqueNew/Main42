@@ -6,17 +6,17 @@
 /*   By: jduque-p <jduque-p@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/22 14:49:05 by jduque-p          #+#    #+#             */
-/*   Updated: 2021/08/22 16:58:01 by jduque-p         ###   ########.fr       */
+/*   Updated: 2021/08/23 21:29:26 by jduque-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
-	char *strTem;
-	size_t start;
-	size_t end;
+	char	*strTem;
+	size_t	start;
+	size_t	end;
 
 	strTem = 0;
 	if (s1 != 0 && set != 0)

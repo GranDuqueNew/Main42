@@ -6,16 +6,16 @@
 /*   By: jduque-p <jduque-p@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/22 14:55:47 by jduque-p          #+#    #+#             */
-/*   Updated: 2021/08/22 15:10:44 by jduque-p         ###   ########.fr       */
+/*   Updated: 2021/08/23 21:19:34 by jduque-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int GetPalabras(const char *str, char c)
+static int	GetPalabras(const char *str, char c)
 {
-	int cnt;
-	int put;
+	int	cnt;
+	int	put;
 
 	cnt = 0;
 	put = 0;
@@ -33,10 +33,10 @@ static int GetPalabras(const char *str, char c)
 	return (cnt);
 }
 
-static char *putPalabra(const char *str, int start, int end)
+static char	*putPalabra(const char *str, int start, int end)
 {
-	char *chr;
-	int cnt;
+	char	*chr;
+	int		cnt;
 
 	cnt = 0;
 	chr = malloc((end - start + 1) * sizeof(char));
@@ -46,14 +46,15 @@ static char *putPalabra(const char *str, int start, int end)
 	return (chr);
 }
 
-char **ft_split(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
-	size_t cnt1;
-	size_t cnt2;
-	int index;
-	char **split;
+	size_t	cnt1;
+	size_t	cnt2;
+	int		index;
+	char	**split;
 
-	if (!s || !(split = malloc((GetPalabras(s, c) + 1) * sizeof(char *))))
+	split = malloc((GetPalabras(s, c) + 1) * sizeof(char *));
+	if (!s || !split)
 		return (0);
 	cnt1 = 0;
 	cnt2 = 0;

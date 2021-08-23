@@ -1,23 +1,22 @@
 = Host-specific information ====================================================
 $> hostname; uname -msr
-MacBook-Pro-de-Jose.local
-Darwin 20.6.0 x86_64
+c1r16s1.42madrid.com
+Darwin 18.6.0 x86_64
 $> date
-domingo, 22 de agosto de 2021, 20:22:51 CEST
+lunes, 23 de agosto de 2021, 21:41:34 CEST
 $> gcc --version
-Apple clang version 12.0.5 (clang-1205.0.22.11)
-Target: x86_64-apple-darwin20.6.0
+Apple clang version 11.0.0 (clang-1100.0.33.17)
+Target: x86_64-apple-darwin18.6.0
 Thread model: posix
 InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
 $> clang --version
-Apple clang version 12.0.5 (clang-1205.0.22.11)
-Target: x86_64-apple-darwin20.6.0
+Apple clang version 11.0.0 (clang-1100.0.33.17)
+Target: x86_64-apple-darwin18.6.0
 Thread model: posix
 InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
 
 = libft.h=======================================================================
 $> norminette libft.h | grep -E '(Error|Warning)'
-norminette : command not found
 
 = Compiling libft ==============================================================
 $> make re
@@ -31,15 +30,12 @@ $> make bonus
 make: *** No rule to make target `bonus'.  Stop.
 
 $> ls -la libft.a
--rw-r--r--  1 jduque-p  staff  38272 22 ago 20:22 /Users/jduque-p/Desktop/MAC_Drive/1_GIT/Main42/3_Pruebas/1_Puebas_Libft/libft-war-machine/dirlibft/libft.a
+-rw-r--r--  1 jduque-p  2019  38600 23 ago 21:41 /Users/jduque-p/Desktop/1_42Main/Main42/3_Pruebas/1_Puebas_Libft/libft-war-machine/dirlibft/libft.a
 
 = Part1_functions ==============================================================
 
 = ft_memset.c ==================================================================
 $> norminette ft_memset.c | grep -E '(Error|Warning)'
-
-norminette : command not found
-
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_memset.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -65,9 +61,6 @@ Diff OK :D
 
 = ft_bzero.c ===================================================================
 $> norminette ft_bzero.c | grep -E '(Error|Warning)'
-
-norminette : command not found
-
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_bzero.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -83,9 +76,6 @@ Diff OK :D
 
 = ft_calloc.c ==================================================================
 $> norminette ft_calloc.c | grep -E '(Error|Warning)'
-
-norminette : command not found
-
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_calloc.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -96,9 +86,6 @@ Diff OK :D
 
 = ft_memcpy.c ==================================================================
 $> norminette ft_memcpy.c | grep -E '(Error|Warning)'
-
-norminette : command not found
-
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_memcpy.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -119,18 +106,12 @@ Diff OK :D
 
 = ft_memccpy.c =================================================================
 $> norminette ft_memccpy.c | grep -E '(Error|Warning)'
-
-norminette : command not found
-
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_memccpy.c main.c libft.a -o user_exe
 
-clang: error: no such file or directory: '/Users/jduque-p/Desktop/MAC_Drive/1_GIT/Main42/3_Pruebas/1_Puebas_Libft/libft-war-machine/dirlibft//ft_memccpy.c'
+clang: error: no such file or directory: '/Users/jduque-p/Desktop/1_42Main/Main42/3_Pruebas/1_Puebas_Libft/libft-war-machine/dirlibft//ft_memccpy.c'
 
 = ft_memmove.c =================================================================
 $> norminette ft_memmove.c | grep -E '(Error|Warning)'
-
-norminette : command not found
-
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_memmove.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -161,9 +142,6 @@ Diff OK :D
 
 = ft_memchr.c ==================================================================
 $> norminette ft_memchr.c | grep -E '(Error|Warning)'
-
-norminette : command not found
-
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_memchr.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -199,9 +177,6 @@ Diff OK :D
 
 = ft_memcmp.c ==================================================================
 $> norminette ft_memcmp.c | grep -E '(Error|Warning)'
-
-norminette : command not found
-
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_memcmp.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -252,9 +227,6 @@ Diff OK :D
 
 = ft_strlen.c ==================================================================
 $> norminette ft_strlen.c | grep -E '(Error|Warning)'
-
-norminette : command not found
-
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_strlen.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -290,9 +262,6 @@ Diff OK :D
 
 = ft_strdup.c ==================================================================
 $> norminette ft_strdup.c | grep -E '(Error|Warning)'
-
-norminette : command not found
-
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_strdup.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -303,9 +272,6 @@ Diff OK :D
 
 = ft_strlcat.c =================================================================
 $> norminette ft_strlcat.c | grep -E '(Error|Warning)'
-
-norminette : command not found
-
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_strlcat.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -356,9 +322,6 @@ Diff OK :D
 
 = ft_strlcpy.c =================================================================
 $> norminette ft_strlcpy.c | grep -E '(Error|Warning)'
-
-norminette : command not found
-
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_strlcpy.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -389,9 +352,6 @@ Diff OK :D
 
 = ft_strchr.c ==================================================================
 $> norminette ft_strchr.c | grep -E '(Error|Warning)'
-
-norminette : command not found
-
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_strchr.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -427,9 +387,6 @@ Diff OK :D
 
 = ft_strrchr.c =================================================================
 $> norminette ft_strrchr.c | grep -E '(Error|Warning)'
-
-norminette : command not found
-
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_strrchr.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -475,9 +432,6 @@ Diff OK :D
 
 = ft_strnstr.c =================================================================
 $> norminette ft_strnstr.c | grep -E '(Error|Warning)'
-
-norminette : command not found
-
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_strnstr.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -533,9 +487,6 @@ Diff OK :D
 
 = ft_strncmp.c =================================================================
 $> norminette ft_strncmp.c | grep -E '(Error|Warning)'
-
-norminette : command not found
-
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_strncmp.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -596,9 +547,6 @@ Diff OK :D
 
 = ft_atoi.c ====================================================================
 $> norminette ft_atoi.c | grep -E '(Error|Warning)'
-
-norminette : command not found
-
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_atoi.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -699,9 +647,6 @@ Diff OK :D
 
 = ft_isalpha.c =================================================================
 $> norminette ft_isalpha.c | grep -E '(Error|Warning)'
-
-norminette : command not found
-
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_isalpha.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -742,9 +687,6 @@ Diff OK :D
 
 = ft_isdigit.c =================================================================
 $> norminette ft_isdigit.c | grep -E '(Error|Warning)'
-
-norminette : command not found
-
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_isdigit.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -785,9 +727,6 @@ Diff OK :D
 
 = ft_isalnum.c =================================================================
 $> norminette ft_isalnum.c | grep -E '(Error|Warning)'
-
-norminette : command not found
-
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_isalnum.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -828,9 +767,6 @@ Diff OK :D
 
 = ft_isascii.c =================================================================
 $> norminette ft_isascii.c | grep -E '(Error|Warning)'
-
-norminette : command not found
-
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_isascii.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -876,9 +812,6 @@ Diff OK :D
 
 = ft_isprint.c =================================================================
 $> norminette ft_isprint.c | grep -E '(Error|Warning)'
-
-norminette : command not found
-
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_isprint.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -919,9 +852,6 @@ Diff OK :D
 
 = ft_toupper.c =================================================================
 $> norminette ft_toupper.c | grep -E '(Error|Warning)'
-
-norminette : command not found
-
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_toupper.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -962,9 +892,6 @@ Diff OK :D
 
 = ft_tolower.c =================================================================
 $> norminette ft_tolower.c | grep -E '(Error|Warning)'
-
-norminette : command not found
-
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_tolower.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -1007,9 +934,6 @@ Diff OK :D
 
 = ft_strmapi.c =================================================================
 $> norminette ft_strmapi.c | grep -E '(Error|Warning)'
-
-norminette : command not found
-
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_strmapi.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -1020,9 +944,6 @@ Diff OK :D
 
 = ft_substr.c ==================================================================
 $> norminette ft_substr.c | grep -E '(Error|Warning)'
-
-norminette : command not found
-
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_substr.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -1053,9 +974,6 @@ Diff OK :D
 
 = ft_strjoin.c =================================================================
 $> norminette ft_strjoin.c | grep -E '(Error|Warning)'
-
-norminette : command not found
-
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_strjoin.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -1081,9 +999,6 @@ Diff OK :D
 
 = ft_strtrim.c =================================================================
 $> norminette ft_strtrim.c | grep -E '(Error|Warning)'
-
-norminette : command not found
-
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_strtrim.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -1114,9 +1029,6 @@ Diff OK :D
 
 = ft_split.c ===================================================================
 $> norminette ft_split.c | grep -E '(Error|Warning)'
-
-norminette : command not found
-
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_split.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -1152,9 +1064,6 @@ Diff OK :D
 
 = ft_itoa.c ====================================================================
 $> norminette ft_itoa.c | grep -E '(Error|Warning)'
-
-norminette : command not found
-
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_itoa.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -1210,9 +1119,6 @@ Diff OK :D
 
 = ft_putchar_fd.c ==============================================================
 $> norminette ft_putchar_fd.c | grep -E '(Error|Warning)'
-
-norminette : command not found
-
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_putchar_fd.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -1253,9 +1159,6 @@ Diff OK :D
 
 = ft_putstr_fd.c ===============================================================
 $> norminette ft_putstr_fd.c | grep -E '(Error|Warning)'
-
-norminette : command not found
-
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_putstr_fd.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -1281,9 +1184,6 @@ Diff OK :D
 
 = ft_putendl_fd.c ==============================================================
 $> norminette ft_putendl_fd.c | grep -E '(Error|Warning)'
-
-norminette : command not found
-
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_putendl_fd.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -1309,9 +1209,6 @@ Diff OK :D
 
 = ft_putnbr_fd.c ===============================================================
 $> norminette ft_putnbr_fd.c | grep -E '(Error|Warning)'
-
-norminette : command not found
-
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_putnbr_fd.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -1364,9 +1261,6 @@ Diff OK :D
 
 = ft_lstnew_bonus.c ============================================================
 $> norminette ft_lstnew_bonus.c | grep -E '(Error|Warning)'
-
-norminette : command not found
-
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_lstnew.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -1387,9 +1281,6 @@ Diff OK :D
 
 = ft_lstdelone_bonus.c =========================================================
 $> norminette ft_lstdelone_bonus.c | grep -E '(Error|Warning)'
-
-norminette : command not found
-
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_lstdelone.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -1400,9 +1291,6 @@ Diff OK :D
 
 = ft_lstclear_bonus.c ==========================================================
 $> norminette ft_lstclear_bonus.c | grep -E '(Error|Warning)'
-
-norminette : command not found
-
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_lstclear.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -1413,9 +1301,6 @@ Diff OK :D
 
 = ft_lstadd_front_bonus.c ======================================================
 $> norminette ft_lstadd_front_bonus.c | grep -E '(Error|Warning)'
-
-norminette : command not found
-
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_lstadd_front.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -1426,9 +1311,6 @@ Diff OK :D
 
 = ft_lstadd_back_bonus.c =======================================================
 $> norminette ft_lstadd_back_bonus.c | grep -E '(Error|Warning)'
-
-norminette : command not found
-
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_lstadd_back.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -1439,9 +1321,6 @@ Diff OK :D
 
 = ft_lstsize_bonus.c ===========================================================
 $> norminette ft_lstsize_bonus.c | grep -E '(Error|Warning)'
-
-norminette : command not found
-
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_lstsize.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -1452,9 +1331,6 @@ Diff OK :D
 
 = ft_lstiter_bonus.c ===========================================================
 $> norminette ft_lstiter_bonus.c | grep -E '(Error|Warning)'
-
-norminette : command not found
-
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_lstiter.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -1465,18 +1341,12 @@ Diff OK :D
 
 = ft_lstmap_bonus.c ============================================================
 $> norminette ft_lstmap_bonus.c | grep -E '(Error|Warning)'
-
-norminette : command not found
-
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_lstmap.c main.c libft.a -o user_exe
 
-clang: error: no such file or directory: '/Users/jduque-p/Desktop/MAC_Drive/1_GIT/Main42/3_Pruebas/1_Puebas_Libft/libft-war-machine/dirlibft//ft_lstmap.c'
+clang: error: no such file or directory: '/Users/jduque-p/Desktop/1_42Main/Main42/3_Pruebas/1_Puebas_Libft/libft-war-machine/dirlibft//ft_lstmap.c'
 
 = ft_lstlast_bonus.c ===========================================================
 $> norminette ft_lstlast_bonus.c | grep -E '(Error|Warning)'
-
-norminette : command not found
-
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_lstlast.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -1489,9 +1359,6 @@ Diff OK :D
 
 = ft_striteri.c ================================================================
 $> norminette ft_striteri.c | grep -E '(Error|Warning)'
-
-norminette : command not found
-
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_striteri.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================

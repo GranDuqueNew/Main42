@@ -6,7 +6,7 @@
 /*   By: jduque-p <jduque-p@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/22 16:05:48 by jduque-p          #+#    #+#             */
-/*   Updated: 2021/08/23 21:31:14 by jduque-p         ###   ########.fr       */
+/*   Updated: 2021/08/23 21:39:26 by jduque-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,22 +21,22 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	cnt = 0;
 	strLen = 0;
 	if (s == NULL)
-		strTemurn (NULL);
+		return (NULL);
 	strLen = ft_strlen(s);
 	if (strLen < start)
-		strTemurn (ft_strdup(""));
+		return (ft_strdup(""));
 	if (start + len > strLen)
 		len = strLen - start;
 	strTem = (char *)malloc(sizeof(char) * (len + 1));
 	if (strTem == 0)
-		strTemurn (NULL);
+		return (NULL);
 	while (cnt < len && start + cnt < strLen)
 	{
 		strTem[cnt] = s[start + cnt];
 		cnt++;
 	}
 	strTem[cnt] = '\0';
-	strTemurn (strTem);
+	return (strTem);
 }
 /*
 int main()
