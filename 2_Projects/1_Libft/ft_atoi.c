@@ -6,7 +6,7 @@
 /*   By: jduque-p <jduque-p@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/24 20:26:43 by jduque-p          #+#    #+#             */
-/*   Updated: 2021/08/26 19:55:49 by jduque-p         ###   ########.fr       */
+/*   Updated: 2021/08/27 19:47:50 by jduque-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,6 @@ int	ft_atoi(const char *str)
 		return (-1);
 	if (maxmin == 27)
 		return (0);
-	
 	return (sgn * num);
 }
 /*
